@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url(SPACE16695444280018128.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .menu{
+            float: left;
+            width: 20px;
+        }
+        .menuitem{
+            float: bottom;
+            color: #2485bd;
+            font-family: Arial,cursive;
+            padding: 8px;
+            margin-top: 7px;
+            border-bottom: 1px solid;
+        }
+        .nav-link {
+            padding: 8px;
+            margin-top: 7px;
+            border-bottom: 1px solid #b3a4b9;
+        }
+        span{
+        color: rgb(99, 105, 141);
+        }
+        header {
+            background:none;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+        article {
+            margin-bottom: 2em;
+        }
+        article img {
+            width: 50%;
+            height: auto;
+        }
+        @media (min-width: 768px) {
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            article {
+                flex: 1 1 calc(50% - 1em);
+                margin-bottom: 2em;
+            }
+        }
+        @media (min-width: 1024px) {
+            article {
+                flex: 1 1 calc(33.333% - 1em);
+            }
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        div a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            display:inline-block;
+        }
+        ul {
+            display: inline;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {display: inline-block;}
+        ul li:hover {background: #555;}
+        ul li:hover ul {display: block;}
+        ul li ul {
+            position: absolute;
+            width: 200px;
+            display: none;
+        }
+        ul li ul li {  
+            display: block; 
+        }
+        ul li ul li a {display:block !important;} 
+        ul li ul li:hover {background: #141414;}
+    </style>
+</head>
+<body style="font-family: Verdana;">
+    <header>
+        <h1><span>Welcome to My Blog:From John Julian G Avila</span></h1>
+        <button class="navbar-toggler" type="button"data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="overflow:auto">
+            <div class="menuitem">
+                <h1>
+            <div><a class="menuitem"href="DropDown.html">Continue</a></div>
+                </h1>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                    <a href="#">Links</a>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </li>
+                </ul>
+<ul>
+    <li>
+    <a href="#">Lessons</a>
+    <ul>
+        <li><a href="Hello world.html">Hellow  world</a></li>
+        <li><a href="Style.html">Styles</a></li>
+        <li><a href="CSS.html">CSS</a></li>
+        <li><a href="Image.html">IMAGE</a></li>
+        <li><a href="DIV.html">DIV</a></li>
+        <li><a href="ID.html">ID</a></li>
+        <li><a href="IFRAMES.html">IFRAMES</a></li>
+        <li><a href="JSjava script.html">Java script</a></li>
+    </ul>
+    </li>
+</ul>
+</div>
+    
+    </header>
+    <div class="container">
+        <article>
+            <h2>(HTML)Hypertext Markup Language</h2>
+            <img src="html.jpg" alt="(HTML)Hypertext Markup Language">
+            <p>HTML (HyperText Markup Language):
+
+                Purpose: HTML is the standard markup language used to create the structure of web pages.
+                Function: It defines the content of the page using elements such as headings, paragraphs, links, images, and other types of media. HTML elements are represented by tags (e.g., <h1>, <p>, <a>, <img>).
+                </p>
+        </article>
+        <article>
+            <h2>(CSS)Cascading stylesheet</h2>
+            <img src="css.jpg" alt="Sample image">
+            <p>CSS (Cascading Style Sheets):
+
+                Purpose: CSS is used to control the presentation, formatting, and layout of web pages.
+                Function: It allows you to apply styles to HTML elements, such as colors, fonts, spacing, and positioning. CSS can make the same HTML content look completely different with different style rules. It works by associating style rules with HTML elements using selectors.
+                .</p>
+        </article>
+        <article>
+            <h2>(JS)Java Script</h2>
+            <img src="java script.jpg" alt="Sample image">
+            <p>JavaScript:
+
+                Purpose: JavaScript is a programming language used to create dynamic and interactive web content.
+                Function: It allows you to manipulate the content and behavior of web pages in real-time. JavaScript can be used for a wide range of tasks, from simple interactivity (e.g., form validation, button clicks) to complex operations (e.g., asynchronous data fetching, animations, and handling user inputs).
+                .</p>
+        </article>
+    </div>
+    <div style="overflow:auto">
+        <div class="menuitem">
+            <h1>
+        <div><a class="menuitem"href="index.html">Return to Home</a></div>
+            </h1>
+        </div>
+        
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.@John Julian Avila</p>
+    </footer>
+</body>
+</html>
